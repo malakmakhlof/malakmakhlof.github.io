@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malak Makhlof</title>
+    <link rel="stylesheet" href="style.css"/>
+
+    <style>
+      .navbar {
+        background-color: #ffffff;
+        padding: 14px;
+      }
+
+      .navbar a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+      }
+
+      .navbar a:hover {
+        color: #003369;
+      }
+
+      /* Flexbox layout to push left and right items apart */
+      ul.horizontal-flex {
+        display: flex;
+        justify-content: space-between; /* Pushes nav-left to the left and nav-right to the right */
+        align-items: center;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Horizontal alignment for items inside left and right groups */
+      .nav-left, .nav-right {
+        display: flex;
+        gap: 55px; /* Adjust spacing between individual links */
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      hr.rounded {
+        border: 3px solid #156ed3;
+      }
+
+      .flex-container {
+        display: flex;
+        gap: 15px; 
+      }
+
+      .left-box {
+        width: 30%; 
+        border: 1px solid #000000;
+      }
+
+      .right-box {
+        flex: 70%;
+        border: 1px solid #000000;
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="horizontal-flex"> 
+          <ul class="nav-left">
+            <li><a href="index.html">Home | Malak Makhlof</a></li> 
+          </ul>
+          <ul class="nav-right">
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="linkedin.html">Linkedin</a></li>
+            <li><a href="researchstatement.html">Research Statement</a></li>
+          </ul>
+        </ul>
+    </nav>
+
+    <hr class="rounded"> 
+
+    <h1 id="title">Malak Makhlof</h1>
+    <h3 id="description">First Year Pre-Biomedical Engineering Student at the University of North Carolina at Chapel Hill</h3>
+    <img src="newuncbanner.jpg" alt="Malak Makhlof" width="100%" height="auto">
+
+    <div class="flex-container">
+      <div class="left-box"> 
+        <img src="headshot.jpg" alt="Malak Makhlof" width="100%" height="auto">
+      </div>
+
+      <div class="right-box">
+        <h2>About Me</h2>
+        <p>Approximately 500 words: Include an image or avatar.</p>
+      </div>
+    </div>
+</body>
+</html>
